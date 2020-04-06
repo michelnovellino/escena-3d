@@ -1,0 +1,14 @@
+{
+  "name": "first-3d",
+  "version": "1.0.0",
+  "description": "test 3d threejs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "michelnovellino",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
