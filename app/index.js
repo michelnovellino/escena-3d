@@ -35,6 +35,7 @@ function createScene() {
     //geometries
     // var cubeGeo = new _instance.BoxGeometry(15, 15, 15);
     var cubeGeo = new _instance.IcosahedronGeometry(10, 1);
+    cubeGeo.computeFlatVertexNormals();
     var cubeMaterial = new _instance.MeshLambertMaterial(
         { color: 0xee1122 }
     );
@@ -48,8 +49,6 @@ function update() {
 
 function render() {
     controls.update();
-
-    cube.rotation.y += 0.01;
     console.log(renderer.info.render.calls)
     renderer.render(scene, camera);
 }
